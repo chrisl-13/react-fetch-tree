@@ -8,6 +8,7 @@
     "@babel/parser": "^7.12.16",
     "@babel/traverse": "^7.12.13",
     "@reactfetchtree/rft": "^2.0.0",
+    "apollo-epoch": "^0.1.4",
     "fs": "0.0.1-security",
     "path": "^0.12.7",
     "react": "^17.0.1",
