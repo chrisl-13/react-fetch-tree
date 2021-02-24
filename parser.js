@@ -169,7 +169,7 @@ const componentGraph = (invocationStore, nodeStore, componentStore) => {
   return;
 }
 
-const dependenciesGraph = (entryFile) => {
+const rftParser = (entryFile) => {
   const entry = getDependencies(entryFile);
   const queue = [entry];
 
@@ -209,5 +209,7 @@ const dependenciesGraph = (entryFile) => {
   return componentGraph(invocationStore, nodeStore, componentStore);
 }
 
-dependenciesGraph('./src/index.js');
+// dependenciesGraph('./src/index.js');
 console.log(componentStore);
+
+export default rftParser;
