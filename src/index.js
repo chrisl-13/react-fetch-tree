@@ -5,6 +5,7 @@ import obj from "./test";
 import { findNodeByComponentName, Utils } from "react-fiber-traverse";
 import Tree from "react-d3-tree";
 import axios from 'axios';
+import './style.scss'
 
 console.log("ran");
 function Fetchtree() {

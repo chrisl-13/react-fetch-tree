@@ -99,7 +99,7 @@ const getDependencies = (filename) => {
   //Traverse AST using babeltraverse to identify imported nodes
   traverse(raw_ast, {
     ImportDeclaration: ({ node }) => {
-      if (node.source.value.indexOf('./') !== -1) dependencies.push(node.source.value);
+      if (node.source.value.indexOf('./') !== -1) dependencies.push(node.source.value); // To fix logic here for ../../ routes
     },
     Function(path) {
       if(path.node.id) {
