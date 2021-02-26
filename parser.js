@@ -79,8 +79,9 @@ const getDependencies = (filename) => {
     },
     ReturnStatement: ({ node }) => {
       if (node.argument) {
+        console.log(node.argument.type, parentName)
         if (
-          node.argument.type === 'JSXElement' && 
+          node.argument.type === 'JSXElement' || node.argument.type === 'JSXFragment' && 
           parentName && 
           !componentStore.hasOwnProperty(parentName)
         ) {
@@ -200,9 +201,9 @@ const dependenciesGraph = (entryFile) => {
   // console.log(queue[0].dataRequests)
   // console.log('DATAREQUESTNODES => ', queue[0].dataRequests)
   // console.log(queue[2].dataRequests)
-  // console.log('COMPONENT STORE => ', componentStore);
-  // console.log('INVOCATION STORE => ', invocationStore);
-  // console.log('NODE STORE => ', nodeStore);
+  console.log('COMPONENT STORE => ', componentStore);
+  console.log('INVOCATION STORE => ', invocationStore);
+  console.log('NODE STORE => ', nodeStore);
   // console.log(queue)
   // console.log(cache);
 
@@ -210,4 +211,4 @@ const dependenciesGraph = (entryFile) => {
 }
 
 dependenciesGraph('./src/index.js');
-console.log(componentStore);
+// console.log(componentStore);
