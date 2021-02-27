@@ -211,4 +211,4 @@ const dependenciesGraph = (entryFile) => {
 }
 
 dependenciesGraph('./src/index.js');
-// console.log(componentStore);
+console.log(componentStore);
