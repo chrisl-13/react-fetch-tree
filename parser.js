@@ -202,7 +202,7 @@ const dependenciesGraph = (entryFile) => {
   // console.log('DATAREQUESTNODES => ', queue[0].dataRequests)
   // console.log(queue[2].dataRequests)
   console.log('COMPONENT STORE => ', componentStore);
-  console.log('INVOCATION STORE => ', invocationStore);
+  // console.log('INVOCATION STORE => ', invocationStore);
   console.log('NODE STORE => ', nodeStore);
   // console.log(queue)
   // console.log(cache);

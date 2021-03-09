@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM, { render } from "react-dom";
 import { fetchUser, fetchPosts } from "./fakeApi";
-import obj from "./test";
+import Banana from "./test";
 import { findNodeByComponentName, Utils } from "react-fiber-traverse";
 import Tree from "react-d3-tree";
 import axios from 'axios';
@@ -38,6 +38,7 @@ function ProfilePage() {
       <button onClick={fetchUser}>
         Change Character
       </button>
+      <Banana />
     </div>
   );
 }

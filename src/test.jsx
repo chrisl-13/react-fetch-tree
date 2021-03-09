@@ -5,7 +5,7 @@ console.log(test1);
 console.log(testDR);
 export const obj = {};
 
-class ClassTest extends React.Component {
+class Banana extends React.Component {
   componentDidMount() {
     fetchUser();
   }
