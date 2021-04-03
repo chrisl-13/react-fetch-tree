@@ -7,8 +7,8 @@ let ID: number = 0;
 
 type CacheStore = { [key: string]: number } | {};
 type InvocationStore = { [key: string]:  [] | string[] } | {};
-type NodeStore = { [key: string]:  {reqType: string, parentName: string, filename: string } } | {};
-type ComponentStore = { [key: string]:  {reqType: string, parentName: string } } | {};
+type NodeStore = { [key: string]:  { reqType: string, parentName: string, filename: string } } | {};
+type ComponentStore = { [key: string]:  { reqType: string, parentName: string } } | {};
 
 const [cache, invocationStore, nodeStore, componentStore]: [CacheStore, InvocationStore, NodeStore, ComponentStore] = [{}, {}, {}, {}];
 
